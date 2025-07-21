@@ -9,6 +9,6 @@ namespace Inventory_Management_Service
         [Required]
         [MaxLength(100)]
         public string Name { get; set; }
-        public ICollection<Product> Products { get; set; }
+        public ICollection<Product> Products { get; set; } = new List<Product>();
     }
 }

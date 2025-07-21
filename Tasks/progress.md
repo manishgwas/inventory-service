@@ -10,8 +10,8 @@ Track your progress as you complete each implementation task. Mark each checkbox
 - [x] 005.md: Implement SKU Endpoints
 - [x] 006.md: Implement Business Logic & Constraints
 - [x] 007.md: Error Handling & Validation
-- [ ] 008.md: API Documentation (Swagger/OpenAPI)
-- [ ] 009.md: Testing
+- [x] 008.md: API Documentation (Swagger/OpenAPI)
+- [x] 009.md: Testing
 - [ ] 010.md: Deployment & Dockerization
 
 ---

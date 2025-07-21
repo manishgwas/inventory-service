@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TestRun id="b6acad9e-77ce-45e4-9707-9df81fd9c5c1" name="manis@THUNDER 2025-07-21 13:46:46" runUser="THUNDER\manis" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2025-07-21T13:46:46.8138307+05:30" queuing="2025-07-21T13:46:46.8138315+05:30" start="2025-07-21T13:46:42.5751269+05:30" finish="2025-07-21T13:46:47.2583805+05:30" />
+  <TestSettings name="default" id="1637aab6-bedb-4ad0-b39b-614f5937fee1">
+    <Deployment runDeploymentRoot="manis_THUNDER_2025-07-21_13_46_46" />
+  </TestSettings>
+  <Results>
+    <UnitTestResult executionId="e23358b0-63dc-4395-a81c-562941a2d288" testId="7b3766a5-6f0e-4bb5-32d3-90aa8a6fe1a7" testName="CreateProduct_ReturnsCreatedProduct" computerName="THUNDER" duration="00:00:00.2342759" startTime="2025-07-21T13:46:46.6035835+05:30" endTime="2025-07-21T13:46:46.8384451+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e23358b0-63dc-4395-a81c-562941a2d288" />
+    <UnitTestResult executionId="f7358706-f42e-4d0e-870c-551c640d5942" testId="c46bb159-017d-258b-c753-d69f7fcde6ca" testName="TestMethod1" computerName="THUNDER" duration="00:00:00.0002861" startTime="2025-07-21T13:46:47.0933888+05:30" endTime="2025-07-21T13:46:47.0969350+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f7358706-f42e-4d0e-870c-551c640d5942" />
+    <UnitTestResult executionId="0794d373-90f3-40b9-a755-d954411e24c6" testId="7df13043-c4db-1417-fd16-8ab580762d18" testName="GetCategories_ReturnsAllCategories" computerName="THUNDER" duration="00:00:00.2617009" startTime="2025-07-21T13:46:46.3401599+05:30" endTime="2025-07-21T13:46:46.6026978+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="0794d373-90f3-40b9-a755-d954411e24c6" />
+    <UnitTestResult executionId="5d2ce930-4baa-4430-aec4-d759ccd20052" testId="83cab4ff-83c8-3a98-7e59-8421d7180c3a" testName="CreateSku_ReturnsCreatedSku" computerName="THUNDER" duration="00:00:00.0444807" startTime="2025-07-21T13:46:47.0059616+05:30" endTime="2025-07-21T13:46:47.0515467+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="5d2ce930-4baa-4430-aec4-d759ccd20052" />
+    <UnitTestResult executionId="e58d2b62-96b1-4669-88d1-3f4366a78bfe" testId="60fdadb3-7a1e-64af-983f-7bdcf8ddd57a" testName="CreateCategory_ReturnsCreatedCategory" computerName="THUNDER" duration="00:00:02.4244646" startTime="2025-07-21T13:46:43.8713101+05:30" endTime="2025-07-21T13:46:46.3292253+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e58d2b62-96b1-4669-88d1-3f4366a78bfe" />
+    <UnitTestResult executionId="cdbf5955-6f16-4f0a-9489-c69c7fa9035c" testId="0bf9ed59-43e2-086c-11d2-e4adc2f7c402" testName="GetSkusForProduct_ReturnsAllSkus" computerName="THUNDER" duration="00:00:00.0407686" startTime="2025-07-21T13:46:47.0517763+05:30" endTime="2025-07-21T13:46:47.0931766+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="cdbf5955-6f16-4f0a-9489-c69c7fa9035c" />
+    <UnitTestResult executionId="9a6c0b01-5180-4e10-a766-c259e22370f3" testId="534fda74-1089-3778-44f9-f71fe6e3dfec" testName="GetProducts_ReturnsAllProducts" computerName="THUNDER" duration="00:00:00.1666774" startTime="2025-07-21T13:46:46.8386157+05:30" endTime="2025-07-21T13:46:47.0057481+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="9a6c0b01-5180-4e10-a766-c259e22370f3" />
+  </Results>
+  <TestDefinitions>
+    <UnitTest name="GetSkusForProduct_ReturnsAllSkus" storage="c:\users\manis\desktop\ai assignment\inventorymanagementservice.tests\bin\debug\net8.0\inventorymanagementservice.tests.dll" id="0bf9ed59-43e2-086c-11d2-e4adc2f7c402">
+      <Execution id="cdbf5955-6f16-4f0a-9489-c69c7fa9035c" />
+      <TestMethod codeBase="C:\Users\manis\Desktop\AI Assignment\InventoryManagementService.Tests\bin\Debug\net8.0\InventoryManagementService.Tests.dll" adapterTypeName="executor://mstestadapter/v2" className="InventoryManagementService.Tests.SkuControllerTests" name="GetSkusForProduct_ReturnsAllSkus" />
+    </UnitTest>
+    <UnitTest name="GetProducts_ReturnsAllProducts" storage="c:\users\manis\desktop\ai assignment\inventorymanagementservice.tests\bin\debug\net8.0\inventorymanagementservice.tests.dll" id="534fda74-1089-3778-44f9-f71fe6e3dfec">
+      <Execution id="9a6c0b01-5180-4e10-a766-c259e22370f3" />
+      <TestMethod codeBase="C:\Users\manis\Desktop\AI Assignment\InventoryManagementService.Tests\bin\Debug\net8.0\InventoryManagementService.Tests.dll" adapterTypeName="executor://mstestadapter/v2" className="InventoryManagementService.Tests.ProductControllerTests" name="GetProducts_ReturnsAllProducts" />
+    </UnitTest>
+    <UnitTest name="CreateCategory_ReturnsCreatedCategory" storage="c:\users\manis\desktop\ai assignment\inventorymanagementservice.tests\bin\debug\net8.0\inventorymanagementservice.tests.dll" id="60fdadb3-7a1e-64af-983f-7bdcf8ddd57a">
+      <Execution id="e58d2b62-96b1-4669-88d1-3f4366a78bfe" />
+      <TestMethod codeBase="C:\Users\manis\Desktop\AI Assignment\InventoryManagementService.Tests\bin\Debug\net8.0\InventoryManagementService.Tests.dll" adapterTypeName="executor://mstestadapter/v2" className="InventoryManagementService.Tests.CategoryControllerTests" name="CreateCategory_ReturnsCreatedCategory" />
+    </UnitTest>
+    <UnitTest name="CreateProduct_ReturnsCreatedProduct" storage="c:\users\manis\desktop\ai assignment\inventorymanagementservice.tests\bin\debug\net8.0\inventorymanagementservice.tests.dll" id="7b3766a5-6f0e-4bb5-32d3-90aa8a6fe1a7">
+      <Execution id="e23358b0-63dc-4395-a81c-562941a2d288" />
+      <TestMethod codeBase="C:\Users\manis\Desktop\AI Assignment\InventoryManagementService.Tests\bin\Debug\net8.0\InventoryManagementService.Tests.dll" adapterTypeName="executor://mstestadapter/v2" className="InventoryManagementService.Tests.ProductControllerTests" name="CreateProduct_ReturnsCreatedProduct" />
+    </UnitTest>
+    <UnitTest name="CreateSku_ReturnsCreatedSku" storage="c:\users\manis\desktop\ai assignment\inventorymanagementservice.tests\bin\debug\net8.0\inventorymanagementservice.tests.dll" id="83cab4ff-83c8-3a98-7e59-8421d7180c3a">
+      <Execution id="5d2ce930-4baa-4430-aec4-d759ccd20052" />
+      <TestMethod codeBase="C:\Users\manis\Desktop\AI Assignment\InventoryManagementService.Tests\bin\Debug\net8.0\InventoryManagementService.Tests.dll" adapterTypeName="executor://mstestadapter/v2" className="InventoryManagementService.Tests.SkuControllerTests" name="CreateSku_ReturnsCreatedSku" />
+    </UnitTest>
+    <UnitTest name="TestMethod1" storage="c:\users\manis\desktop\ai assignment\inventorymanagementservice.tests\bin\debug\net8.0\inventorymanagementservice.tests.dll" id="c46bb159-017d-258b-c753-d69f7fcde6ca">
+      <Execution id="f7358706-f42e-4d0e-870c-551c640d5942" />
+      <TestMethod codeBase="C:\Users\manis\Desktop\AI Assignment\InventoryManagementService.Tests\bin\Debug\net8.0\InventoryManagementService.Tests.dll" adapterTypeName="executor://mstestadapter/v2" className="InventoryManagementService.Tests.UnitTest1" name="TestMethod1" />
+    </UnitTest>
+    <UnitTest name="GetCategories_ReturnsAllCategories" storage="c:\users\manis\desktop\ai assignment\inventorymanagementservice.tests\bin\debug\net8.0\inventorymanagementservice.tests.dll" id="7df13043-c4db-1417-fd16-8ab580762d18">
+      <Execution id="0794d373-90f3-40b9-a755-d954411e24c6" />
+      <TestMethod codeBase="C:\Users\manis\Desktop\AI Assignment\InventoryManagementService.Tests\bin\Debug\net8.0\InventoryManagementService.Tests.dll" adapterTypeName="executor://mstestadapter/v2" className="InventoryManagementService.Tests.CategoryControllerTests" name="GetCategories_ReturnsAllCategories" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestEntries>
+    <TestEntry testId="7b3766a5-6f0e-4bb5-32d3-90aa8a6fe1a7" executionId="e23358b0-63dc-4395-a81c-562941a2d288" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="c46bb159-017d-258b-c753-d69f7fcde6ca" executionId="f7358706-f42e-4d0e-870c-551c640d5942" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="7df13043-c4db-1417-fd16-8ab580762d18" executionId="0794d373-90f3-40b9-a755-d954411e24c6" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="83cab4ff-83c8-3a98-7e59-8421d7180c3a" executionId="5d2ce930-4baa-4430-aec4-d759ccd20052" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="60fdadb3-7a1e-64af-983f-7bdcf8ddd57a" executionId="e58d2b62-96b1-4669-88d1-3f4366a78bfe" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="0bf9ed59-43e2-086c-11d2-e4adc2f7c402" executionId="cdbf5955-6f16-4f0a-9489-c69c7fa9035c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="534fda74-1089-3778-44f9-f71fe6e3dfec" executionId="9a6c0b01-5180-4e10-a766-c259e22370f3" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <ResultSummary outcome="Completed">
+    <Counters total="7" executed="7" passed="7" failed="0" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+</TestRun>

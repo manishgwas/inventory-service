@@ -12,9 +12,9 @@ namespace Inventory_Management_Service
         public string Name { get; set; }
         [Required]
         public int CategoryId { get; set; }
-        public Category Category { get; set; }
-        public ICollection<SKU> SKUs { get; set; }
+        public Category Category { get; set; } = null!;
+        public ICollection<SKU> SKUs { get; set; } = new List<SKU>();
         [Timestamp]
-        public byte[] RowVersion { get; set; }
+        public byte[] RowVersion { get; set; } = new byte[8];
     }
 }
