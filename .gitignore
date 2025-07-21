@@ -1,0 +1,18 @@
+bin/
+obj/
+.vs/
+*.user
+*.suo
+
+# Local DB / Cache
+*.db
+*.db-shm
+*.db-wal
+*.cache
+
+# Logs
+*.log
+
+# System files
+.DS_Store
+Thumbs.db
