@@ -14,5 +14,7 @@ namespace Inventory_Management_Service
         public int CategoryId { get; set; }
         public Category Category { get; set; }
         public ICollection<SKU> SKUs { get; set; }
+        [Timestamp]
+        public byte[] RowVersion { get; set; }
     }
 }

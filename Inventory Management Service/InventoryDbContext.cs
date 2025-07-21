@@ -31,6 +31,11 @@ namespace Inventory_Management_Service
                 .HasIndex(s => s.Code)
                 .IsUnique();
 
+            // Unique product name within a category
+            modelBuilder.Entity<Product>()
+                .HasIndex(p => new { p.Name, p.CategoryId })
+                .IsUnique();
+
             // Property constraints
             modelBuilder.Entity<Category>()
                 .Property(c => c.Name)

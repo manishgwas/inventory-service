@@ -12,6 +12,8 @@ namespace Inventory_Management_Service
         [Required]
         public int ProductId { get; set; }
         public Product Product { get; set; }
+        [Timestamp]
+        public byte[] RowVersion { get; set; }
         // Add additional SKU properties as needed
     }
 }
