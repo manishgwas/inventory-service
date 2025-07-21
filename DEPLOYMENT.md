@@ -31,7 +31,7 @@ cd inventory-service/Inventory\ Management\ Service
 
 - The default configuration uses `docker-compose.yml` to set environment variables for the API and SQL Server.
 - The API connects to the database using the connection string:
-  
+
   `Server=db,1433;Database=InventoryDb;User Id=sa;Password=Your_password123;TrustServerCertificate=True;Encrypt=False;`
 
 - If you need to override any settings, edit `docker-compose.yml` or `appsettings.json` as needed.
@@ -101,7 +101,3 @@ docker compose down -v
 - For Windows/Mac, Docker Compose networking works out of the box. For Linux, ensure Docker network bridge is enabled.
 
 ---
-
-## Contact
-
-For issues, open an issue in the repository or contact the maintainer.
