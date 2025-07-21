@@ -8,7 +8,7 @@ namespace Inventory_Management_Service
         public int Id { get; set; }
         [Required]
         [MaxLength(50)]
-        public string Code { get; set; }
+        public string? Code { get; set; }
         [Required]
         public int ProductId { get; set; }
         public Product Product { get; set; } = null!;

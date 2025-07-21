@@ -4,8 +4,15 @@ using System.Reflection;
 using Microsoft.EntityFrameworkCore;
 var builder = WebApplication.CreateBuilder(args);
 
+// Configure JSON options to handle cycles
+builder.Services.AddControllers().AddJsonOptions(options =>
+{
+    options.JsonSerializerOptions.ReferenceHandler = System.Text.Json.Serialization.ReferenceHandler.Preserve;
+    options.JsonSerializerOptions.MaxDepth = 64;
+});
+
 // Add services to the container.
-builder.Services.AddControllers();
+// (Removed duplicate AddControllers to preserve JSON options)
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(options =>
 {
@@ -25,11 +32,18 @@ app.UseExceptionHandler(errorApp =>
     {
         context.Response.StatusCode = 500;
         context.Response.ContentType = "application/problem+json";
+        var exceptionHandlerPathFeature = context.Features.Get<Microsoft.AspNetCore.Diagnostics.IExceptionHandlerPathFeature>();
+        var ex = exceptionHandlerPathFeature?.Error;
+        // Log the exception to the console
+        if (ex != null)
+        {
+            Console.WriteLine($"Unhandled exception: {ex.Message}\n{ex.StackTrace}");
+        }
         var problem = new ProblemDetails
         {
             Status = 500,
             Title = "An unexpected error occurred!",
-            Detail = "An unhandled exception occurred while processing the request."
+            Detail = ex != null ? $"{ex.Message}\n{ex.StackTrace}" : "An unhandled exception occurred while processing the request."
         };
         await context.Response.WriteAsJsonAsync(problem);
     });
@@ -60,6 +74,16 @@ app.UseSwaggerUI(c =>
 });
 
 app.UseAuthorization();
+
+
+// Temporary endpoint to check SQL Server connectivity
+app.MapGet("/check-sql-connection", (IConfiguration config) =>
+{
+    var connStr = config.GetConnectionString("DefaultConnection");
+    string error;
+    bool canConnect = Inventory_Management_Service.SqlConnectivityChecker.CanConnect(connStr, out error);
+    return canConnect ? Results.Ok("SQL Server connection successful!") : Results.Problem($"SQL Server connection failed: {error}");
+});
 
 app.MapControllers();
 
