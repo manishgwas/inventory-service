@@ -1,4 +1,6 @@
+
 using Microsoft.EntityFrameworkCore;
+using System.Collections.Generic;
 
 namespace Inventory_Management_Service
 {
@@ -44,6 +46,24 @@ namespace Inventory_Management_Service
                 .Property(s => s.Code)
                 .IsRequired()
                 .HasMaxLength(50);
+
+            // Seed data
+            modelBuilder.Entity<Category>().HasData(
+                new Category { Id = 1, Name = "Electronics" },
+                new Category { Id = 2, Name = "Clothing" }
+            );
+
+            modelBuilder.Entity<Product>().HasData(
+                new Product { Id = 1, Name = "Smartphone", CategoryId = 1 },
+                new Product { Id = 2, Name = "Laptop", CategoryId = 1 },
+                new Product { Id = 3, Name = "T-Shirt", CategoryId = 2 }
+            );
+
+            modelBuilder.Entity<SKU>().HasData(
+                new SKU { Id = 1, Code = "ELEC-001", ProductId = 1 },
+                new SKU { Id = 2, Code = "ELEC-002", ProductId = 2 },
+                new SKU { Id = 3, Code = "CLOTH-001", ProductId = 3 }
+            );
         }
     }
 }
