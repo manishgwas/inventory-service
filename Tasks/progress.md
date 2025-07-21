@@ -4,7 +4,7 @@ Track your progress as you complete each implementation task. Mark each checkbox
 
 - [x] 000.md: Project Setup and Tooling
 - [x] 001.md: Define Data Models and Database Context
-- [ ] 002.md: Database Migrations and Seeding
+- [x] 002.md: Database Migrations and Seeding
 - [ ] 003.md: Implement Category CRUD Endpoints
 - [ ] 004.md: Implement Product CRUD Endpoints
 - [ ] 005.md: Implement SKU Endpoints
